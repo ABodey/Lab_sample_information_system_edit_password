@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Reset Password</title>
+  <script type="text/javascript" src="\javascript\resourcejquery.min.js"></script>
+  <script type="text/javascript" src="/javascript/intchaincustody/custodyjavascript.js"></script>
+  <script type="text/javascript" src="/javascript/intchaincustody/resetpw.js"></script>
+</head>
+
+<body>
+<h2><img src="\pictures\puritylabs2.jpg">&nbsp;&nbsp;
+Test Sample Internal Chain of Custody Form
+</h2>
+<h3>Reset Username and Password<h3>
+<div id="continueverify" style="display:">
+  <form method="post" name="form_verify">
+    <label>Select User: </label><span id="staffinitialfull2"></span><script type="text/javascript">getlistupfront('staffinitialfull2');</script>
+    <p><label>Enter Old Username: </label><input type="text" id="oldusername"></p>
+    <p><label>Enter Old Password: </label><input type="password" id="oldpw"></p>
+    <p><input type="button" name="button_continueverify" value="Continue" onclick="validateuserpw()"></p>
+  </form>
+  <span id="message"></span>
+  <span id="msgolduserpw"></span>
+  <span id="msgwrong" style="color:red"></span>
+</div>
+<div id="div_newuserpw" style="display:none">
+  <form method="post" name="form_resetpw">
+    <p><label>Enter New Username: </label><input type="text" id="newusername"></p>
+    <p><label>Enter New Password: </label><input type="password" name="newpw" id="newpw"></p>
+    <p><label>Re-enter Password: </label><input type="password" name="newpw2" id="newpw2"></p>
+    <p><input type="button" name="button_submitnewpw" value="Submit" onclick="resetuserpw()"></p>
+  </form>
+  <span id="msgpwrepeat" style="color:red"></span>
+  <span id="msgdone"></span>
+  <span id="returntologin"></span>
+</div>
+</body>
+</html>
