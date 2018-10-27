@@ -1,0 +1,2 @@
+# Lab_sample_information_system_edit_password
+This appends to lab_sample_information_system application by allowing edits of password
